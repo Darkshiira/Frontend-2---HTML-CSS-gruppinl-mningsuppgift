@@ -1,3 +1,18 @@
+* {
+    background-color: rgb(27, 27, 27);
+color:rgba(255, 255, 255, 0.882)
+}
 h1 {
     font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.882);
+}
+
+.form-control, .input-group-text {
+    background-color: rgb(27, 27, 27);
+    color: rgba(222, 222, 222, 0.748);
+    border:none;
 }
