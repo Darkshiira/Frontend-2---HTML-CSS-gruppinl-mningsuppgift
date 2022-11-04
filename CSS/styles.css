@@ -16,3 +16,14 @@ a {
     color: rgba(222, 222, 222, 0.748);
     border:none;
 }
+
+#inputGroupFile01 {
+    display:none;
+}
+
+.input-group {
+    width: 12%;
+    cursor:pointer;
+}
+
+.tripledots
