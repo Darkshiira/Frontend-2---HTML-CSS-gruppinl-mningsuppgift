@@ -40,8 +40,7 @@ a {
     position:relative;
 
 }
-
-.dotcheckbox, .dotcheckboxlabel {
+ .dotcheckbox, .dotcheckboxlabel { 
     position:absolute;
     top:0;
     right:0;
@@ -50,4 +49,19 @@ a {
 
 .dotcheckbox {
     display:none;
+}
+
+.likes, .comments {
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+    display:none;
+}
+
+.likeslabel, .commentslabel {
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
 }
