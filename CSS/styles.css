@@ -6,6 +6,14 @@ h1 {
     font-size: 1.5rem;
 }
 
+h3 {
+    font-size: 1.2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
 a {
     text-decoration: none;
     color:rgba(255, 255, 255, 0.882);
@@ -26,4 +34,18 @@ a {
     cursor:pointer;
 }
 
-.tripledots
+.tripledots {
+    position:relative;
+
+}
+
+.dotcheckbox, .dotcheckboxlabel {
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+}
+
+.dotcheckbox {
+    display:none;
+}

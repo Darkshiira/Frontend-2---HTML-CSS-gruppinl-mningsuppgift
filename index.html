@@ -62,20 +62,23 @@
         <div class="border border-top-0 ps-3 pb-3" >
             <div >
                 <div class="d-flex flex-row ">
-                    <img class="rounded-circle" width="40px" height="40px" src="https://images.unsplash.com/photo-1526660690293-bcd32dc3b123?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <img class="rounded-circle" width="40px" height="40px" src="https://images.unsplash.com/photo-1526660690293-bcd32dc3b123?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Your profilepicture">
                     <div class="">
                         <div class="input-group input-group-lg">
-                              <span class="input-group-text" id="inputGroup-sizing-lg">Vad händer?</span>
+                                <span class="input-group-text" id="inputGroup-sizing-lg">Vad händer?</span>
                                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                         </div>  
-                         <div class="d-flex flex-row justify-content-start border-top pt-3" >
-                            <input name="fileicon" id="fileicon" type="file"><label for="fileicon">📁</label>
-                            <input name="gifbutton" id="gifbutton" type="button"><label for="gifbutton">💃</label>
-                            <input name="votebutton" id="votebutton" type="button"><label for="votebutton">🗳️</label>
-                            <input type="checkbox" name="smileybox" id="smileybox"><label for="smileybox">☺️</label>
-                            <input name="planbutton" id="planbutton" type="button"><label for="planbutton">📅</label>
-                            <input name="locbutton" id="locbutton" type="button" value=""><label for="locbutton">📍</label>
-                        </div>
+                        </div>  
+                            <div class="d-flex flex-row justify-content-start border-top pt-3" >
+                                <div width="4px" class="input-group mb-3" >
+                                    <label class="input-group-text" for="inputGroupFile01">📁</label>
+                                    <input type="file" class="form-control" id="inputGroupFile01">
+                                 </div>
+                                <input name="gifbutton" id="gifbutton" type="button"><label for="gifbutton">💃</label>
+                                <input name="votebutton" id="votebutton" type="button"><label for="votebutton">🗳️</label>
+                                <input type="checkbox" name="smileybox" id="smileybox"><label for="smileybox">☺️</label>
+                                <input name="planbutton" id="planbutton" type="button"><label for="planbutton">📅</label>
+                                <input name="locbutton" id="locbutton" type="button" value=""><label for="locbutton">📍</label>
+                            </div>
                     </div>
                 </div>
 
@@ -86,22 +89,27 @@
         </div>
 
 <!-- Inlägg -->
-        <article>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
+        <article class = "border p-4">
+            <div class="d-flex">
+                <img class="rounded-circle" width="40px" height="40px" src="https://images.unsplash.com/photo-1601979031895-e5fb94fa0ae0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            
                 <div>
-                    <h3>Profilename</h3>
-                    <h4>Twittername</h4>
-                    <ul>
-                        <li>When posted</li>
-                    </ul>
+                    <div class="d-flex justify-content-end">
+                        <div class="d-flex flex-row">
+                            <h3>Profilename</h3>
+                            <h4>Twittername</h4>
+                            <ul>
+                                <li>When posted</li>
+                            </ul>
+                        </div>
+                        <div class="tripledots">
+                            <input type="checkbox" name="dotcheckbox" id="dotcheckbox1" class="dotcheckbox">
+                            <label for="dotcheckbox" class="dotcheckboxlabel">...</label>
+                        </div>
+                        
+                    </div>
                 </div>
-                <input type="checkbox" name="" id="">
-                <label for="">...</label>
             </div>
-
             <div>
                 innehåll
             </div>
