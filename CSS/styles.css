@@ -50,13 +50,6 @@ a {
 
 .tripledots {
     position:relative;
-
-}
- .dotcheckbox, .dotcheckboxlabel { 
-    position:absolute;
-    top:0;
-    right:0;
-    cursor:pointer;
 }
 
 .dotcheckbox {
