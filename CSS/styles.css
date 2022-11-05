@@ -1,3 +1,5 @@
+/* Overall */
+
 * {
     background-color: rgb(27, 27, 27);
 color:rgba(255, 255, 255, 0.882)
@@ -39,24 +41,14 @@ a {
     border:none;
 }
 
+/* Middle-section */
+
+/* Emojimenu or article-menu*/
 #inputGroupFile01 {
     display:none;
 }
 
-.input-group .file{
-    width: 12%;
-    cursor:pointer;
-}
-
-.tripledots {
-    position:relative;
-}
-
-.dotcheckbox {
-    display:none;
-}
-
-.likes, #gifbutton, #votebutton, #locbutton {
+.likes, .dotcheckbox, #gifbutton, #votebutton, #locbutton {
     position:absolute;
     top:0;
     right:0;
@@ -65,24 +57,18 @@ a {
     z-index: 1;
 }
 
-.likeslabel, .comments, #gifbuttonlabel, .planbutton, #planbuttonlabel, #locbuttonlabel {
+.likeslabel, .dotcheckboxlabel .comments, #gifbuttonlabel, .planbutton, #planbuttonlabel, #locbuttonlabel {
     position:absolute;
     top:0;
     right:0;
     cursor:pointer;
 }
 
-.disabled {
-    cursor: not-allowed;
-    background-color: #0d6efd;
-    opacity:0.2;
+.input-group .file{
+    width: 12%;
+    cursor:pointer;
 }
-
-.votingform {
-    display:none;
-    width:35%;
-}
-
+ /* smiley-menu */
 #smileySearchfield {
     background-color: rgb(27, 27, 27);
     color:rgba(255, 255, 255, 0.882)
@@ -109,6 +95,29 @@ a {
 
 }
 
+/* article-section */
+.tripledots {
+    position:relative;
+}
+
+.disabled {
+    cursor: not-allowed;
+    background-color: #0d6efd;
+    opacity:0.2;
+}
+
+/* Extra divs */
+/* Pops up when - voting */
+.votingform {
+    display:none;
+    width:35%;
+}
+/* Pops up when - posting */
+.hiddenArticle{
+    display:none;
+}
+
+/* Background for the extra divs */
 #blurrybackground {
     position:fixed;
     top:0;
@@ -119,7 +128,7 @@ a {
     z-index: 1;
     display:none;
 }
-
+/* extra divs - gifs */
 #gifs {
     position:absolute;
     top:100px;
@@ -139,7 +148,7 @@ a {
     width:150px;
     height:100px;
 }
-
+ /* Extra divs - schedule */
 #schedule {
     position:absolute;
     top:100px;
@@ -148,9 +157,7 @@ a {
     display:none;
 }
 
-.hiddenArticle{
-    display:none;
-}
+
 
 .select {
     background-color: rgb(27, 27, 27);
@@ -161,7 +168,7 @@ a {
 .form-select {
     width: 300px;
 }
-
+/* Extra divs - comments */
 #comment {
     position:absolute;
     top:10px;
@@ -173,6 +180,10 @@ a {
     display:none;
 
 }
+
+
+
+/* Middle-section-over */
 
 
   @media (max-width: 992px)
