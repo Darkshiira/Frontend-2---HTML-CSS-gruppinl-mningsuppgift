@@ -14,7 +14,9 @@ let hiddenArticle = document.querySelector(".hiddenArticle");
 let tweet = document.querySelector(".tweet");
 let para = document.querySelector("#para");
 let tweetInput = document.querySelector("#tweetInput");
-
+let planbutton = document.querySelectorAll(".planbutton");
+let schedule = document.querySelector("#schedule");
+let buttonclose = document.querySelector("#close");
 let today = new Date();
 
 voting.addEventListener("click", e =>{
@@ -67,6 +69,19 @@ tweet.addEventListener("click", e =>{
     hiddenArticle.style.display = "block";
     para.textContent = tweetInput.value;
 
+});
+
+
+planbutton.forEach(function(button) {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        schedule.style.display = "block";
+    });
+});
+
+buttonclose.addEventListener("click", e =>{
+    e.preventDefault();
+    schedule.style.display = "none";
 });
 
 

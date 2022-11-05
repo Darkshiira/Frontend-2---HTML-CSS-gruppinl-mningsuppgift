@@ -63,15 +63,16 @@ a {
     display:none;
 }
 
-.likes, .comments, #gifbutton, #votebutton, #planbutton, #locbutton {
+.likes, .comments, #gifbutton, #votebutton, #locbutton {
     position:absolute;
     top:0;
     right:0;
     cursor:pointer;
-    display:none;
+   visibility: hidden;
+    z-index: 1;
 }
 
-.likeslabel, .commentslabel, #gifbuttonlabel, #votebuttonlabel, #planbuttonlabel, #locbuttonlabel {
+.likeslabel, .commentslabel, #gifbuttonlabel, .planbutton, #planbuttonlabel, #locbuttonlabel {
     position:absolute;
     top:0;
     right:0;
@@ -111,11 +112,21 @@ a {
 #schedule {
     position:absolute;
     top:100px;
-    right:500px;
+    right:25%;
     width:600px;
     display:none;
 }
 
 .hiddenArticle{
     display:none;
+}
+
+.select {
+    background-color: rgb(27, 27, 27);
+    color:rgba(255, 255, 255, 0.882);
+    border:none;
+}
+
+.form-select {
+    width: 300px;
 }
