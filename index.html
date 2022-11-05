@@ -200,10 +200,99 @@
                                     <input name="votebutton" id="votebutton" type="button">
                                     <label for="votebutton" id="votebuttonlabel">🗳️</label>
                                 </div>
-                                <div style="position:relative" class="ps-3 pe-3">
-                                    <input type="checkbox" name="smileybox" id="smileybox">
-                                    <label for="smileybox" id="smileyboxlabel">☺️</label>
+                                <div style="position:relative" class="">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="smileybutton" data-bs-toggle="dropdown" aria-expanded="false">
+                                            😊
+                                        </button>
+                                        <ul class="dropdown-menu smiley" aria-labelledby="smileybutton">
+                                          <li><input class="rounded-pill dropdown-item" type="search" name="" id="smileySearchfield" placeholder="Search emojis"></li>
+                                          <li class="d-flex flex-row justify-content-around">
+                                            <span class="smileyChooser" id="smileyEmoji">😊</span>
+                                            <span class="smileyChooser" id="animalEmoji">🦙</span>
+                                            <span class="smileyChooser" id="foodEmoji">🍲</span>
+                                            <span class="smileyChooser" id="activityEmoji">🏓</span>
+                                        </li>
+                                          <li class="d-flex flex-wrap" id="smileyEmojis">
+                                            <span>😀</span>
+                                            <span>😅</span>
+                                            <span>😂</span>
+                                            <span>🥰</span>
+                                            <span>😉</span>
+                                            <span>😘</span>
+                                            <span>😜</span>
+                                            <span>🤑</span>
+                                            <span>🤩</span>
+                                            <span>🤪</span>
+                                            <span>🤔</span>
+                                            <span>🤨</span>
+                                            <span>🤬</span>
+                                            <span>🤯</span>
+                                            <span>🤮</span>
+                                            <span>🤫</span>
+                                        </li>
+                                        <li class="d-flex flex-wrap" id="animalEmojis">
+                                            <span>🦊</span>
+                                            <span>🐶</span>
+                                            <span>🐱</span>
+                                            <span>🐭</span>
+                                            <span>🐹</span>
+                                            <span>🐰</span>
+                                            <span>🐻</span>
+                                            <span>🐼</span>
+                                            <span>🐨</span>
+                                            <span>🐯</span>
+                                            <span>🦁</span>
+                                            <span>🐮</span>
+                                            <span>🐷</span>
+                                            <span>🐸</span>
+                                            <span>🐵</span>
+                                            <span>🐔</span>
+                                        </li>
+                                        <li class="d-flex flex-wrap" id="foodEmojis">
+                                            <span>🥞</span>
+                                            <span>🍔</span>
+                                            <span>🍟</span>
+                                            <span>🍕</span>
+                                            <span>🌭</span>
+                                            <span>🍖</span>
+                                            <span>🍗</span>
+                                            <span>🍤</span>
+                                            <span>🍱</span>
+                                            <span>🍣</span>
+                                            <span>🍜</span>
+                                            <span>🍲</span>
+                                            <span>🍛</span>
+                                            <span>🍝</span>
+                                            <span>🍙</span>
+                                            <span>🍚</span>
+                                        </li>
+                                        <li class="d-flex flex-wrap" id="activityEmojis">
+                                            <span>🏏</span>
+                                            <span>🏑</span>
+                                            <span>🏒</span>
+                                            <span>🏓</span>
+                                            <span>🏸</span>
+                                            <span>🥊</span>
+                                            <span>🥋</span>
+                                            <span>⛸️</span>
+                                            <span>🎿</span>
+                                            <span>🏂</span>
+                                            <span>🏹</span>
+                                            <span>🎯</span>
+                                            <span>🎱</span>
+                                            <span>🎳</span>
+                                            <span>🎰</span>
+                                            <span>🎮</span>
+                                        </li>
+
+
+
+                                          
+                                        </ul>
+                                    </div>
                                 </div>
+                                
                                 <div style="position:relative" class="ps-3 pe-3">
                                     <input name="planbutton" id="planbutton" type="button">
                                     <label for="planbutton" id="planbuttonlabel">📅</label>
@@ -263,10 +352,10 @@
                 </div>
                 <div class="ps-5">
                     <div class="dropdown">
-                        <span class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-toggle" id="smileybutton" data-bs-toggle="dropdown" aria-expanded="false">
                             👀
                         </span>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu" aria-labelledby="smileybutton">
                           <li><a class="dropdown-item" href="#">👀 Retweet</a></li>
                           <li><a class="dropdown-item" href="#">📝 Quote</a></li>
                         </ul>
@@ -285,10 +374,10 @@
                         <p>0</p>
                     </div>
                     <div class="dropdown ps-5">
-                        <span class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dropdown-toggle" id="smileybutton" data-bs-toggle="dropdown" aria-expanded="false">
                             📥
                         </span>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu" aria-labelledby="smileybutton">
                           <li><a class="dropdown-item" href="#">Kopiera länken</a></li>
                           <li><a class="dropdown-item" href="#">Dela tweet via</a></li>
                           <li><a class="dropdown-item" href="#">Skicka som direktmeddelande</a></li>
