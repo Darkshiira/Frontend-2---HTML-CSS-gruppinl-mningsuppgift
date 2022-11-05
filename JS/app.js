@@ -16,7 +16,13 @@ let para = document.querySelector("#para");
 let tweetInput = document.querySelector("#tweetInput");
 let planbutton = document.querySelectorAll(".planbutton");
 let schedule = document.querySelector("#schedule");
-let buttonclose = document.querySelector("#close");
+let buttonclose = document.querySelectorAll("#close");
+let gifbutton = document.querySelector("#gifbutton");
+let gifs = document.querySelector("#gifs");
+let blurrybackground = document.querySelector("#blurrybackground");
+let comment = document.querySelector("#comment");
+let commentbuttons = document.querySelectorAll(".comments");
+let commentcounter = document.querySelector("#commentcounter");
 let today = new Date();
 
 voting.addEventListener("click", e =>{
@@ -72,6 +78,8 @@ tweet.addEventListener("click", e =>{
 });
 
 
+
+
 planbutton.forEach(function(button) {
     button.addEventListener('click', e => {
         e.preventDefault();
@@ -79,10 +87,40 @@ planbutton.forEach(function(button) {
     });
 });
 
-buttonclose.addEventListener("click", e =>{
+gifbutton.addEventListener("click", e =>{
     e.preventDefault();
-    schedule.style.display = "none";
+    blurrybackground.style.display = "block"; 
+    gifs.style.display = "block";
+
 });
+
+buttonclose.forEach(function(button) {
+button.addEventListener("click", e => { 
+    e.preventDefault();
+    blurrybackground.style.display = "none";
+    schedule.style.display = "none";
+    gifs.style.display = "none";
+    comment.style.display = "none";
+});
+});
+
+blurrybackground.addEventListener("click", e =>{
+    e.preventDefault();
+    blurrybackground.style.display = "none";
+    schedule.style.display = "none";
+    gifs.style.display = "none";
+    comment.style.display = "none";
+});
+
+commentbuttons.forEach(function(button) {
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        comment.style.display = "block";
+        blurrybackground.style.display = "block";
+        commentcounter.textContent = "1";
+    });
+});
+
 
 
 let li = document.createElement("li");

@@ -62,20 +62,21 @@
         <div class="border border-top-0 ps-3 pb-3" >
             <div >
                 <div class="d-flex flex-row ">
+        <!-- Profilnamn -->
                     <img class="rounded-circle" width="40px" height="40px" src="https://images.unsplash.com/photo-1526660690293-bcd32dc3b123?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Your profilepicture">
                     <div class="">
-
+<!-- Textfält -->
                         <div class="input-group input-group-lg">
                                <input type="text"class="form-control"  id="tweetInput" placeholder="Vad händer?">
                             </div>
-
+<!-- Röstnings sectionen -->
                         <div class="votingform" id="votingform">
                             <form action="" class="d-flex flex-column border rounded me-1 mb-3 p-3">
                             <input type="text" name="" id="" placeholder="Alternativ 1" class="p-4 border rounded">
                                 <input type="text" name="" id="" placeholder="Alternativ 2" class="p-4 border rounded">
         
                             <div class="d-flex flex-row p-2">
-                                <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                     <option selected>Dagar</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -85,7 +86,7 @@
                                     <option value="6">6</option>
                                     <option value="7">7</option>
                                   </select>
-                                  <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                     <option selected>Öppettider</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -113,7 +114,7 @@
                                     <option value="24">24</option>
 
                                   </select>
-                                  <select class="form-select form-select-lg" aria-label=".form-select-sm example">
+                                  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                     <option selected>Minuter</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -184,22 +185,25 @@
                             </div>
                         </form>
                     </div>
-
+<!-- Slut på röstningssektionen -->
                         <div class="d-flex flex-row justify-content-between border-top">
                             <div class="d-flex flex-row justify-content-start pt-3" >
+                                <!-- Emojimenyn -->
                                 <div width="4px" class="input-group file mb-3" >
                                     <label class="input-group-text" for="inputGroupFile01">📁</label>
                                     <input type="file" class="form-control" id="inputGroupFile01">
                                  </div>
-                                 <div style="position:relative" class="ps-3 pe-3">
+                                 <div style="position:relative" class="ps-3 pe-3" id="gifing">
                                     <input name="gifbutton" id="gifbutton" type="button">
                                     <label for="gifbutton" id="gifbuttonlabel">💃</label>
                                 </div>
-                                <div style="position:relative" class="ps-3 pe-3">
+                                <div style="position:relative" class="ps-3 pe-3 pt-2" id="voting">
                                     <input name="votebutton" id="votebutton" type="button">
                                     <label for="votebutton" id="votebuttonlabel">🗳️</label>
                                 </div>
                                 <div style="position:relative" class="">
+
+                                    <!-- Dropdownmenyn smileysar -->
                                     <div class="dropdown">
                                         <button class="btn dropdown-toggle" type="button" id="smileybutton" data-bs-toggle="dropdown" aria-expanded="false">
                                             😊
@@ -211,8 +215,8 @@
                                             <span class="smileyChooser" id="animalEmoji">🦙</span>
                                             <span class="smileyChooser" id="foodEmoji">🍲</span>
                                             <span class="smileyChooser" id="activityEmoji">🏓</span>
-                                        </li>
-                                          <li class="d-flex flex-wrap" id="smileyEmojis">
+                                            </li>
+                                            <li class="d-flex flex-wrap" id="smileyEmojis">
                                             <span>😀</span>
                                             <span>😅</span>
                                             <span>😂</span>
@@ -229,8 +233,8 @@
                                             <span>🤯</span>
                                             <span>🤮</span>
                                             <span>🤫</span>
-                                        </li>
-                                        <li class="d-flex flex-wrap" id="animalEmojis">
+                                            </li>
+                                            <li class="d-flex flex-wrap" id="animalEmojis">
                                             <span>🦊</span>
                                             <span>🐶</span>
                                             <span>🐱</span>
@@ -247,8 +251,8 @@
                                             <span>🐸</span>
                                             <span>🐵</span>
                                             <span>🐔</span>
-                                        </li>
-                                        <li class="d-flex flex-wrap" id="foodEmojis">
+                                            </li>
+                                            <li class="d-flex flex-wrap" id="foodEmojis">
                                             <span>🥞</span>
                                             <span>🍔</span>
                                             <span>🍟</span>
@@ -265,8 +269,8 @@
                                             <span>🍝</span>
                                             <span>🍙</span>
                                             <span>🍚</span>
-                                        </li>
-                                        <li class="d-flex flex-wrap" id="activityEmojis">
+                                            </li>
+                                            <li class="d-flex flex-wrap" id="activityEmojis">
                                             <span>🏏</span>
                                             <span>🏑</span>
                                             <span>🏒</span>
@@ -283,21 +287,18 @@
                                             <span>🎳</span>
                                             <span>🎰</span>
                                             <span>🎮</span>
-                                        </li>
-
-
-
-                                          
+                                            </li> 
                                         </ul>
                                     </div>
                                 </div>
                                 
-                                <div style="position:relative" class="ps-3 pe-3">
+                                <div style="position:relative" class="ps-3 pe-3" id="planning">
                                     <span class="planbutton" id="planbutton1">📅</span>
                                 </div>
-                                <div style="position:relative" class="ps-3 pe-3">
+                                <div style="position:relative" class="ps-3 pe-3" id="locating">
                                     <input name="locbutton" id="locbutton" type="button" value="">
-                                    <label for="locbutton" id="locbuttonlabel">📍</label>
+                                    <label for="locbutton" id="locbuttonlabel"><span class="disabled">📍</span>
+                                        </label>
                                 </div>
                             </div>
                             <div class="ps-5 pt-2">
@@ -343,8 +344,7 @@
 
             <div class="d-flex flex-row ps-5">
                 <div style="position:relative;"class=" ps-2">
-                    <input type="button" name="comments" class="comments" id="comments2">
-                    <label for="comments" class="commentlabel">🗨️</label>
+                    <span class="comments">🗨️</span>
                 </div>
                 <div class="commentcounter ps-2" id="commentcounter1">
                     <p>0</p>
@@ -392,7 +392,6 @@
         <article class = "border p-4">
             <div class="d-flex">
                 <img class="rounded-circle" width="40px" height="40px" src="https://images.unsplash.com/photo-1601979031895-e5fb94fa0ae0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-            
                 <div>
                     <div class="d-flex justify-content-between">
                         <div class="d-flex flex-row">
@@ -415,11 +414,11 @@
 
             <div class="d-flex flex-row ps-5">
                 <div style="position:relative;"class=" ps-2">
-                    <input type="button" name="comments" class="comments" id="comments1">
-                    <label for="comments" class="commentlabel">🗨️</label>
+
+                    <span class="comments">🗨️</span>
                 </div>
                 <div class="commentcounter ps-2" id="commentcounter1">
-                    <p>0</p>
+                    <p id="commentcounter">0</p>
                 </div>
                 <div class="ps-5">
                     <div class="dropdown">
@@ -427,8 +426,8 @@
                             👀
                         </span>
                         <ul class="dropdown-menu" aria-labelledby="smileybutton">
-                          <li><a class="dropdown-item" href="#">👀 Retweet</a></li>
-                          <li><a class="dropdown-item" href="#">📝 Quote</a></li>
+                          <li><a class="dropdown-item" style="color: rgba(222, 222, 222, 0.748)" href="#">👀 Retweet</a></li>
+                          <li><a class="dropdown-item" href="#"style="color: rgba(222, 222, 222, 0.748)">📝 Quote</a></li>
                         </ul>
                       </div>
                       
@@ -717,6 +716,9 @@
 
 <div id="comment">
     <div>
+        <button type="button" id="close" class="btn-close pe-2 pb-3" aria-label="Close"></button>
+        <div class="d-flex py-3">
+            <img class="rounded-circle" width="40px" height="40px" src="https://images.unsplash.com/photo-1601979031895-e5fb94fa0ae0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
         <div class="d-flex justify-content-between">
             <div class="d-flex flex-row">
                 <h3 >Profilename</h3>
@@ -731,8 +733,8 @@
             
         </div>
     </div>
-</div>
-<div class="container-fluid ps-5">
+
+<div class="container-fluid ps-5 py-3">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis mi interdum, gravida purus ac, porttitor sapien. Nunc justo nunc, convallis vitae nibh faucibus, consectetur pulvinar libero. Suspendisse a volutpat lacus. Curabitur ac viverra lacus. Nullam ultrices molestie risus, nec luctus lectus imperdiet id. Fusce eros dui, lacinia quis suscipit eget, sodales non purus. Nam at ultricies sem, in pretium neque. Nullam at odio dignissim, facilisis sem sed, suscipit magna.
 </div>
 <div class="d-flex flex-row ">
@@ -741,7 +743,7 @@
                 <div class="">
 <!-- Textfält -->
                     <div class="input-group input-group-lg">
-                           <input type="text"class="form-control"  id="tweetInput" placeholder="Vad vill du svara?">
+                           <input type="text"class="form-control"  id="tweetComment" placeholder="Vad vill du svara?">
                         </div>
                         <div class="d-flex flex-row justify-content-between border-top">
                             <div class="d-flex flex-row justify-content-start pt-3" >
@@ -858,6 +860,10 @@
                                         </label>
                                 </div>
                             </div>
+                            <div class="ps-5 pt-2">
+                                <button for="tweetInput" class="tweet btn btn-primary rounded-pill px-2" type="submit" >Tweet</button>
+                            </div>
+</div>
 
 </div>
 
