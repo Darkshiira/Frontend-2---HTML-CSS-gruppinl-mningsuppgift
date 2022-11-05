@@ -10,12 +10,18 @@ let smileyEmojis = document.querySelector(".smileyEmojis");
 let animalEmojis = document.querySelector(".animalEmojis");
 let foodEmojis = document.querySelector(".foodEmojis");
 let activityEmojis = document.querySelector(".activityEmojis");
+let hiddenArticle = document.querySelector(".hiddenArticle");
+let tweet = document.querySelector(".tweet");
+let para = document.querySelector("#para");
+let tweetInput = document.querySelector("#tweetInput");
 
 let today = new Date();
 
 voting.addEventListener("click", e =>{
     e.preventDefault();
     votingform.style.display = "block";
+    para.textContent = tweetInput.value;
+    console.log(tweetInput.value);
 });
 
 remove.addEventListener("click", e =>{
@@ -56,7 +62,12 @@ acitivityEmoji.addEventListener("click", e =>{
     activityEmojis.style.display = "block";
 });
 
+tweet.addEventListener("click", e =>{
+    e.preventDefault();
+    hiddenArticle.style.display = "block";
+    para.textContent = tweetInput.value;
 
+});
 
 
 let li = document.createElement("li");
