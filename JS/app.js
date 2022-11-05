@@ -23,6 +23,10 @@ let blurrybackground = document.querySelector("#blurrybackground");
 let comment = document.querySelector("#comment");
 let commentbuttons = document.querySelectorAll(".comments");
 let commentcounter = document.querySelector("#commentcounter");
+let likes1 = document.querySelector("#likes1");
+let likeslabel1 = document.querySelector("#likeslabel1");
+let likescounter1 = document.querySelector("#likescounter1");
+
 let today = new Date();
 
 voting.addEventListener("click", e =>{
@@ -120,6 +124,23 @@ commentbuttons.forEach(function(button) {
         commentcounter.textContent = "1";
     });
 });
+
+likes1.addEventListener("change", e =>{
+    e.preventDefault();
+    if (likes1.checked)
+    {
+        likeslabel1.textContent = "❤️";
+        likescounter1.textContent = "1";
+        console.log("checked");
+    }
+    else
+    {
+        likeslabel1.textContent = "🤍";
+        likescounter1.textContent = "0";
+        console.log("unchecked");
+    }
+});
+
 
 
 
