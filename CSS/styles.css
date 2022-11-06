@@ -42,6 +42,24 @@ a {
 }
 
 /* Middle-section */
+/* nav */
+#star {
+    cursor:pointer;
+}
+
+.starmenu {
+    position:absolute;
+    z-index:2;
+    top:0;
+    right:0;
+    display:none;
+}
+
+.gohome:hover, .contentpref:hover {
+    background-color: rgb(41, 2, 10);
+    cursor:pointer;
+
+}
 
 /* Emojimenu or article-menu*/
 #inputGroupFile01 {
@@ -104,6 +122,11 @@ a {
     cursor: not-allowed;
     background-color: #0d6efd;
     opacity:0.2;
+}
+
+.dropdown-item.googlyeyes:hover, .dropdown-item.filing:hover {
+    background-color: #0d6efd;
+
 }
 
 /* Extra divs */

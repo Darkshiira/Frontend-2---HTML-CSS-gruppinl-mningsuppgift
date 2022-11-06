@@ -24,16 +24,35 @@ let comment = document.querySelector("#comment");
 let commentbuttons = document.querySelectorAll(".comments");
 let commentcounter = document.querySelector("#commentcounter");
 let likes1 = document.querySelector("#likes1");
+let likes2 = document.querySelector("#likes2");
+let likes3 = document.querySelector("#likes3");
+let likes4 = document.querySelector("#likes4");
 let likeslabel1 = document.querySelector("#likeslabel1");
+let likeslabel2 = document.querySelector("#likeslabel2");
+let likeslabel3 = document.querySelector("#likeslabel3");
+let likeslabel4 = document.querySelector("#likeslabel4");
 let likescounter1 = document.querySelector("#likescounter1");
+let likescounter2 = document.querySelector("#likescounter2");
+let likescounter3 = document.querySelector("#likescounter3");
+let likescounter4 = document.querySelector("#likescounter4");
+let star = document.querySelector("#star");
+let starmenu = document.querySelector("#starmenu");
+
 
 let today = new Date();
+
+star.addEventListener("click", e => {
+    e.preventDefault();
+    blurrybackground.style.display = "block";
+    starmenu.style.display = "block";
+});
+
+
 
 voting.addEventListener("click", e =>{
     e.preventDefault();
     votingform.style.display = "block";
     para.textContent = tweetInput.value;
-    console.log(tweetInput.value);
 });
 
 remove.addEventListener("click", e =>{
@@ -114,6 +133,7 @@ blurrybackground.addEventListener("click", e =>{
     schedule.style.display = "none";
     gifs.style.display = "none";
     comment.style.display = "none";
+    starmenu.style.display = "none";
 });
 
 commentbuttons.forEach(function(button) {
@@ -131,13 +151,59 @@ likes1.addEventListener("change", e =>{
     {
         likeslabel1.textContent = "❤️";
         likescounter1.textContent = "1";
-        console.log("checked");
+
     }
     else
     {
         likeslabel1.textContent = "🤍";
         likescounter1.textContent = "0";
-        console.log("unchecked");
+
+    }
+});
+
+likes2.addEventListener("change", e =>{
+    e.preventDefault();
+    if (likes2.checked)
+    {
+        likeslabel2.textContent = "❤️";
+        likescounter2.textContent = "1";
+        (console.log("checked"));
+    }
+    else
+    {
+        likeslabel2.textContent = "🤍";
+        likescounter2.textContent = "0";
+        (console.log("unchecked"));
+    }
+});
+
+likes3.addEventListener("change", e =>{
+    e.preventDefault();
+    if (likes3.checked)
+    {
+        likeslabel3.textContent = "❤️";
+        likescounter3.textContent = "1";
+
+    }
+    else
+    {
+        likeslabel3.textContent = "🤍";
+        likescounter3.textContent = "0";
+    }
+});
+
+likes4.addEventListener("change", e =>{
+    e.preventDefault();
+    if (likes4.checked)
+    {
+        likeslabel4.textContent = "❤️";
+        likescounter4.textContent = "1";
+
+    }
+    else
+    {
+        likeslabel4.textContent = "🤍";
+        likescounter4.textContent = "0";
     }
 });
 
