@@ -2,22 +2,22 @@
 
 * {
     background-color: rgb(27, 27, 27);
-color:rgba(255, 255, 255, 0.882)
+    color:rgba(255, 255, 255, 0.882)
 }
 h1 {
     font-size: 1.5rem;
 }
 
-h2 {
+.votingform h2 {
     font-size: 1.2rem;
     color: crimson;
     text-align:center;
     
 }
 
-h2:hover {
+.votingform h2:hover {
     background-color: rgb(41, 2, 10);
-
+    cursor: pointer;
 }
 
 h3 {
@@ -207,7 +207,6 @@ a {
 
 
 /* Middle-section-over */
-
 
   @media (max-width: 992px)
   {
