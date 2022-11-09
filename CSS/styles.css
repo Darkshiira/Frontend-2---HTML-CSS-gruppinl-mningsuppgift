@@ -228,10 +228,15 @@ a {
         display:none;
     }
 
-    #menunavbar {
-        display:none;
-    }
   }
+
+    @media (max-width: 600px)
+    {
+        #menunavbar {
+            display:none;
+        }
+    
+    }
 
   /* Left-section */
 
