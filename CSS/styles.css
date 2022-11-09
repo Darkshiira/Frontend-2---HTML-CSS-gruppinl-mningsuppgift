@@ -225,3 +225,11 @@ a {
         display:none;
     }
   }
+
+  /* Left-section */
+
+  #profileLeft {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
